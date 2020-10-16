@@ -108,28 +108,41 @@ class Restaurante:
         self.Restaurante.append(self.restaurante)
         return self.restaurante
 
-    def costoTotal(self):
-        return 0
+    def costoTotal(self, costo):
+        i = 0
+        while i <= (len(self.Restaurante) - 1):
+            lista = self.Restaurante[i]
+            sum(lista)
+            i = +1
+        print(f"su costo total es de: {costo}")
 
-    def costoTotalConDescuento(self):
-        return 0
+    def costoTotalConDescuento(self, costo, conDescuento, descuento):
+        i = 0
+        while 1 <= (len(self.Restaurante) - 1):
+            lista = self.Restaurante[i]
+            if conDescuento == "no":
+                sum(lista)
+                i += 1
+            else:
+                total = costo - descuento
+                sum(lista)
+                i += 1
 
 
 class Pizza:
+    option = int(input("quiere ingresar una orden?: 0- salir, 1- seguir"))
 
-    nombre = input("Ingrese su nombre: ")
-    lugar = input("Ingrese un lugar: ")
-    costo = float(input("Ingrese el costo"))
-    conDescuento = input("Tiene descuento? ")
-    if conDescuento == "no":
-        print(False)
-    else:
-        print(True)
-    if conDescuento == "no":
-        print("no hay descuento")
-    else:
-        descuento = input("Cual es el descuento?: ")
-        print("hay descuento")
+    if option == 0:
+        break
+    if option == 1:
+        nombre = input("Ingrese su nombre: ")
+        lugar = input("Ingrese un lugar: ")
+        costo = float(input("Ingrese el costo"))
+        conDescuento = input("Tiene descuento? ")
+        if conDescuento == "no":
+                print(False)
+        else:
+
 
 
 """
