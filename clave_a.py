@@ -23,7 +23,15 @@ la suma de los numeros pares del 1 al 1000
 
 # start-->
 def sumaPares():
-    return 0
+    numero = 1
+    suma = 0
+    while numero < 1000:
+        if numero % 2:
+            suma = numero + suma
+            numero = +1
+        else:
+            numero = +1
+    return suma
 
 
 """
@@ -66,8 +74,16 @@ el ejercicio numero 3 convertirlo en una clase
 
 # start-->
 class Cilindro:
-    def areaTotalCilindro(self):
-        return 0
+    def __init__(self):
+        sel.Cilindro = []
+
+    def areaTotalCilindro(self, radio, altura):
+        radio = 5.0
+        altura = 7.0
+        areaLateral = 2 * radio * math.pi * radio * altura
+        areaCirculo = 2 * radio * math.pi * radio ** 2
+
+        return areaLateral + areaCirculo
 
 
 """
@@ -84,10 +100,11 @@ pizza
 
 
 class Restaurante:
-    self.Restaurante = []
+    def __init__(self):
+        self.Restaurante = []
 
     def ordenar(self, nombre, lugar, costo, conDescuento, descuento):
-        self.restaurante = (self, nombre, lugar, costo, conDescuento, descuento)
+        self.restaurante = (nombre, lugar, costo, conDescuento, descuento)
         self.Restaurante.append(self.restaurante)
         return self.restaurante
 
@@ -99,6 +116,7 @@ class Restaurante:
 
 
 class Pizza:
+
     nombre = input("Ingrese su nombre: ")
     lugar = input("Ingrese un lugar: ")
     costo = float(input("Ingrese el costo"))
@@ -126,4 +144,4 @@ github_<nombre>_<codigo>.txt y subirlo a moodle
 
 # github url-->
 def getGithubUrl():
-    return ""
+    return "https://github.com/marcelamata/parcial.git"
